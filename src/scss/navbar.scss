@@ -1,0 +1,59 @@
+@import 'variaveis';
+
+.navbar-portfolio {
+
+    .navbar-toggler {
+        
+        background-color: rgb(255, 255, 178);
+
+        &:hover {
+            background-color: rgb(255, 217, 0);
+        }
+    }
+
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+
+    .navbar-nav {
+        display: $flex;
+        align-items: $center;
+        margin-left: $auto;
+    }
+
+    .nav-item {
+        margin-right: 10px; // Espaçamento entre os itens
+
+        &:last-child {
+            margin-right: 0; // Remove o espaçamento do último item
+        }
+    }
+
+    .nav-link {
+        color: $white;
+
+        &:hover {
+            color: $yellow2;
+        }
+
+        &.active {
+            color: $yellow2;
+            position: $relative;
+            cursor: $default;
+            border-radius: 10px;
+            border: 1px $solid $yellow2;
+        }
+
+        &.active:after {
+            content: '';
+            position: $absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            border-bottom: $none;
+        }
+    }
+}
+
+h1 {
+    color: $white;
+}
