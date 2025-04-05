@@ -6,24 +6,24 @@
                     <h2>Entre em contato comigo agora mesmo!</h2>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                     <div class="redes-sociais">
                         <h3>Minhas Redes Sociais</h3>
-                        <h6><i class="fa-brands fa-instagram"></i> Instagram: <a
-                                @click="getInstagram()">mateus_maranhao12</a></h6>
-                        <h6><i class="fa-brands fa-github"></i> Github: <a @click="getGitHub()">mateusmaranhao12</a></h6>
-                        <h6><i class="fa-brands fa-linkedin"></i> LinkedIn: <a @click="getLinkedin()">Mateus Maranhão</a>
+                        <h6><i class="fa-brands fa-instagram"></i> <a
+                                @click="getInstagram()">mateusnmaranhao</a></h6>
+                        <h6><i class="fa-brands fa-github"></i> <a @click="getGitHub()">mateusmaranhao12</a></h6>
+                        <h6><i class="fa-brands fa-linkedin"></i> <a @click="getLinkedin()">Mateus Maranhão</a>
                         </h6>
-                        <h6><i class="fa-solid fa-envelope"></i> Gmail: <a>mateusnmaranhao@gmail.com</a>
+                        <h6><i class="fa-solid fa-envelope"></i> <a>mateusnmaranhao@gmail.com</a>
                         </h6>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                     <div class="redes-sociais text-center">
                         <h3>Entre em contato direto comigo</h3>
                         <div class="d-flex justify-content-center">
-                            <button @click="getWhatsApp()" class="btn btn-redes-sociais mx-2"><i
+                            <button @click="getWhatsApp()" class="btn-whatsapp mx-2"><i
                                     class="fa-brands fa-whatsapp"></i>
                                 WhatsApp</button>
                         </div>
@@ -49,7 +49,7 @@ export default class Contato extends Vue {
     }
 
     getInstagram() {
-        window.open('https://www.instagram.com/mateus_maranhao12/')
+        window.open('https://www.instagram.com/mateusnmaranhao/')
     }
 
     getLinkedin() {

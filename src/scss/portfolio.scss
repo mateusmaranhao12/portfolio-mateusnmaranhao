@@ -1,7 +1,6 @@
 @import 'variaveis';
 
 .sobre {
-    margin-top: 2rem;
     display: $flex;
     justify-content: $center;
     align-items: $center;
@@ -17,13 +16,12 @@
 
     h1 {
         text-align: $center;
-        color: rgb(255, 230, 0);
+        color: rgb(255, 255, 255);
         margin: 40px $auto;
         font-size: 2.8rem;
         letter-spacing: 0.25rem;
         text-shadow: 4px 4px 0px $black,
-            -4px 0 0px $black,
-            7px 4px 0 $white;
+            -4px 0 0px $black
     }
 }
 
@@ -76,11 +74,7 @@
 
     h1 {
 
-        background-color: rgb(0, 0, 0);
-        border-radius: 20px;
         padding: 10px;
-        border: 1px $solid $yellow;
-
         font-weight: $bold;
         text-transform: $uppercase;
         text-align: $center;
@@ -111,10 +105,7 @@
 
     h2 {
 
-        background-color: $black;
-        border-radius: 20px;
         padding: 20px;
-        border: 1px $solid $yellow;
 
         font-weight: $bold;
         text-transform: $uppercase;
@@ -138,41 +129,44 @@
 
         padding: 20px;
         margin-top: 20px;
-        border: 1px $solid $yellow;
+        border: 1px $solid $white;
         background-color: $black;
         border-radius: 20px;
 
         h3 {
             padding: 10px;
             text-align: $center;
-            color: $yellow;
+            color: $white;
             text-transform: $uppercase;
             font-weight: $bold;
         }
 
         h6 {
-            color: $yellow;
+            color: $white;
             text-align: $center;
 
             a {
-                color: $yellow;
+                color: $white;
                 text-decoration: $none;
 
                 &:hover {
                     cursor: $pointer;
                     text-decoration: $underline;
+                    color: $yellow;
                 }
             }
         }
 
-        .btn-redes-sociais {
-            background-color: $yellow;
-            color: $black;
+        .btn-whatsapp {
+            background-color: green;
+            color: $white;
+            border-radius: 10px;
+            padding: 12px;
+            border: $none;
+            transition: .3s ease;
 
             &:hover {
-                background-color: $black;
-                color: $yellow;
-                border: 1px $solid $yellow;
+                background-color: darkgreen;
             }
         }
     }
@@ -181,22 +175,38 @@
 
 .projetos {
 
+    .row-projetos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
     .projeto {
-        border: 1px $solid $yellow;
+        flex: 1 1 calc(33.333% - 13.33px);
+        max-width: calc(33.333% - 13.33px);
+        box-sizing: border-box;
+        border-radius: 10px;
         margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
         padding: 20px;
-        background-color: rgb(43, 43, 43);
+        background-color: rgb(20, 20, 20);
         box-shadow:
-            10px 10px 5px $black,
-            15px 15px 5px $black;
+            5px 4px 3px $black,
+    }
+
+    @media (max-width: 768px) {
+        .projeto {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
     }
 
     h2 {
 
-        background-color: $black;
-        border-radius: 20px;
         padding: 20px;
-        border: 1px $solid $yellow;
 
         font-weight: $bold;
         text-transform: $uppercase;
@@ -226,7 +236,7 @@
     }
 
     p {
-        color: $yellow;
+        color: $white;
         padding: 5px;
         text-shadow: 0 1px 2px #070707,
             1px 3px 1px $black,
@@ -241,7 +251,7 @@
         font-weight: $bold;
         text-transform: $uppercase;
         text-align: $center;
-        color: $yellow2;
+        color: $white;
         text-shadow: 0 1px 2px #070707,
             1px 3px 1px $black,
             2px 5px 1px $black,

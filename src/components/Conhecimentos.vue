@@ -40,7 +40,10 @@ export default class Conhecimentos extends Vue {
         { nome: 'Node.js', imagem: 'node' },
         { nome: 'Bootstrap', imagem: 'bootstrap' },
         { nome: 'Git', imagem: 'git' },
-        { nome: 'GitHub', imagem: 'github' }
+        { nome: 'GitHub', imagem: 'github' },
+        { nome: 'NextJS', imagem: 'next' },
+        { nome: 'Tailwind', imagem: 'tailwind' },
+        { nome: 'React', imagem: 'react' },
 
     ]
 
