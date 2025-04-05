@@ -57,7 +57,7 @@ export default class Projetos extends Vue {
         {
             nome: 'Pluug-ai Sistema',
             video: 'pluug_ai_sistema',
-            texto: 'O sistema do site Pluug-ai feito em HTML5, CSS3, Bootstrap e JavaScript'
+            texto: 'O front-end estático do sistema da Pluug-ai feito em HTML5, CSS3, Bootstrap e JavaScript'
         },
 
         {
